@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Mona Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "Geist Mono", ui-monospace, monospace;
+  --color-paper: #faf9f7;
+  --color-ink: #161616;
+  --color-body: #55534f;
+  --color-mute: #8d8a84;
+  --color-line: #e9e6e1;
+  --color-pink: #f8c3dc;
+  --color-pink-ink: #8a1f55;
+  --color-plum: #4a1036;
+  --color-ok: #1f7a4d;
+  --color-warn: #a35a00;
+  --color-bad: #b42318;
+}
+
+html {
+  background: var(--color-paper);
+  color: var(--color-ink);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Echoes the striped type on gooseworks.ai */
+.scan {
+  font-family: var(--font-mono);
+  font-weight: 500;
+  color: transparent;
+  background: repeating-linear-gradient(180deg, var(--color-ink) 0 0.07em, transparent 0.07em 0.13em);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.dots {
+  background-image: radial-gradient(var(--color-pink) 1.6px, transparent 1.7px);
+  background-size: 12px 12px;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-ink);
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+  }
+}
