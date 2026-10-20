@@ -464,6 +464,9 @@ function About() {
             <a href="https://cal.com/bhupathi-murali-krishna-ed0ola/intro-call" className="rounded-full border border-line bg-white px-5 py-3 text-[15px] font-medium">
               Book 15 minutes
             </a>
+            <a href="https://github.com/krishnanbhupathi/ad-fatigue-check" className="rounded-full border border-line bg-white px-5 py-3 text-[15px] font-medium">
+              Read the code
+            </a>
           </div>
         </div>
       </div>
